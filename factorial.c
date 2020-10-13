@@ -30,8 +30,8 @@ void main()
  {
      //logic
      int fact = 1, i;
-     for (i = 1; i <= input; i++)
-        fact = fact*i;
-    
-    return fact;
+        if(input ==0)
+        return 1;
+     else
+        return input*factorial(input-1);
  }
