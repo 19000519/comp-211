@@ -3,23 +3,35 @@
 
 //author : ppk
 // purpose : To read a number and print its factorial
-
- void main()
+int factorial(int input);
+void main()
  {
      //variable defination
-     int input, i, fact = 1;
+     int fn, sn;
+    
+     
+      //read data from user
+     printf("Enter first number:");
+     scanf("%d", &fn);
 
-     //read data from user
-     printf("Enter any number:");
-     scanf("%d", &input);
-
-     //logic
-     for (i = 1; i <= input; i++)
-        fact = fact*i;
-
+     printf("Enter second number:");
+     scanf("%d", &sn);
+ 
      //print the result
-     printf("Factorial of %d is %d", input, fact);
+     printf("Factorial of %d is %d \n", fn, factorial(fn));
+     printf("Factorial of %d is %d \n", sn, factorial(sn));
+     
      
      getch();
     
+ }
+
+ int factorial(int input)
+ {
+     //logic
+     int fact = 1, i;
+     for (i = 1; i <= input; i++)
+        fact = fact*i;
+    
+    return fact;
  }
