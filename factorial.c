@@ -25,7 +25,11 @@ void main()
      getch();
     
  }
-
+/*to call a function you have to
+  1- declare the function
+  2- define it outside main
+  3- call the function in main for output */
+  
  int factorial(int input)
  {
      //logic
