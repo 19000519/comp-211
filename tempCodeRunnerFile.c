@@ -1,2 +1,2 @@
 
-    //variable declaration
+    //logic
