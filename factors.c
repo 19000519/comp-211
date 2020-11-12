@@ -3,26 +3,26 @@
 #include<conio.h>
 //author : ppk
 // purpose : To read a number from user input and print factors of the number
-int logic(int input);
+int logic(int fact);
 int main()
 {
     //variable declaration
-    int x;
+    int factor;
 
     //read user input
     printf("enter any number:");
-    scanf("%d", &x);
+    scanf("%d", &factor);
     
-    printf("%d, ", logic(x));
+    printf("%d, ", logic(factor));
 
 }
 
-int logic(int input)
+int logic(int fact)
 {
     int i;
-    for(i = 1; i <= input; i++)
+    for(i = 1; i <= fact; i++)
     {   
-        if(input%i == 0)
+        if(fact%i == 0)
          printf("%d, ", i);
         
     }
