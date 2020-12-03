@@ -1,5 +1,5 @@
 //Author : Phenyo Phemelo Koswane
-// Purpose : To calculate the text according to house value
+// Purpose : To calculate the tax according to house value
 #include<stdio.h>
 
 int main()
